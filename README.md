@@ -12,7 +12,7 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
 ## Como executar o projeto localmente
 
 1. Clone este repositório para o seu computador:
-   git clone https://github.com/seu-usuario/todo-app.git
+   git clone https://github.com/igornardoni/todo-app.git
 
 2. Navegue até o diretório do projeto:
    `cd todo-app`

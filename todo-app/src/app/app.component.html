@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="app.component.css">
+</head>
+<body>
+  <div class="toolbar">
+    <h2>To-Do List</h2>
+    <div class="spacer"></div>
+    <!-- ... -->
+  </div>
+  <div class="content">
+    <h1>To-Do List</h1>
+    <div *ngFor="let todo of todos">
+      <input type="checkbox" [(ngModel)]="todo.completed" (change)="updateTodoStatus(todo)">
+      <span [class.completed]="todo.completed">{{ todo.title }}</span>
+      <button (click)="deleteTodo(todo)">Delete</button>
+    </div>
+    <input type="text" [(ngModel)]="newTodoTitle">
+    <button (click)="addTodo()">Add</button>
+  </div>
+</body>
+</html>
+
